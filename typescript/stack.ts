@@ -2,6 +2,10 @@ class Stack<T> {
   top = 0;
   items: Array<T> = new Array<T>();
 
+  constructor(initialItems: Array<T> = []) {
+    this.items = initialItems;
+  }
+
   empty() {
     if (this.top === 0) return true;
 
@@ -22,3 +26,5 @@ class Stack<T> {
     }
   }
 }
+
+export default Stack;
