@@ -1,3 +1,7 @@
+/**
+ * Stack implementation based on Cormen, Leiserson,
+ * Rivest & Stein's Introduction to Algorithms.
+ */
 class Stack<T> {
   top = 0;
   items: Array<T> = new Array<T>();
